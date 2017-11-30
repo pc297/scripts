@@ -2,7 +2,7 @@
 # filters peaks based on gaussian fit (the premise being that background peaks and true peaks will occur in different distributions)
 # retrieves counts pairwise from wig files based on union of two peak files, and rank by fold change, creating equal size cdt files
 # usage: main(file1,file2,wigFile1,wigFile2,peakDist=400,profileSize=2000,countsRange=400,fcCutoff=1,peakFilteringMethod="none",cutoffMethod="foldChange",blackList="",simpleRepeats="",genome="hg38",histSize=10,outdir="")
-# requires mixtools and Homer (externally)
+# requires mixtools, bedtools and Homer (both externally)
 
 library(mixtools)
 
